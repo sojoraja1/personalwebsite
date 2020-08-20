@@ -101,6 +101,7 @@
     
     .notice-board-content p{
         font-size:10px;
+        padding: 9px;
         color: white;
         font-weight: bold;
     }
