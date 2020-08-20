@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>sundar gautam</title>
+    <link rel="stylesheet" href="./index.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/5fe368b823.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js"></script>
+  </head>
+  <body>
+    <div class="container homepage">
+      <!--Navigation Bar starts from here -->
+      <nav id="navigationbar"  class="navbar navbar-expand-md justify-content-right">
+        <button
+          class="navbar-toggler menu-bar-on-small-devices"
+          type="button"
+          data-toggle="collapse"
+          data-target="#collapsibleNavbar"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">
+                <div class="menu-item">
+                  <i class="fas fa-project-diagram"></i>Projects
+                </div>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">
+                <div class="menu-item">
+                  <i class="fas fa-user-graduate"></i>Skills
+                </div>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">
+                <div class="menu-item">
+                  <i class="fas fa-address-card"></i>
+                  About
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!--Navigation Ends Here-->
+
+      <!--This is notice board-->
+      <div class="notice-board">
+        <div class="row notice-board-content">
+          <p>
+            If you would like to learn web development and mobile app
+            development click here !!
+            <a
+              href="https://www.youtube.com/channel/UC3H7rkHOhwfRszIOTUa7GzQ"
+              target="popup"
+              ><i class="fas fa-external-link-alt"></i
+            ></a>
+          </p>
+        </div>
+      </div>
+      <!-- notice board ends here-->
+
+      <!--addtional fancy showcase-->
+      <div class="row">
+        <div class="col-md-4">
+          <div class="featured"></div>
+        </div>
+        <div class="col-md-8 mt-3">
+          <p id="simpleUsage"></p>
+          <!--This is typewritter-->
+        </div>
+      </div>
+      <!--fancy ends here -->
+      <section class="heading text-center">
+        <div class="container">
+          <h2 class="jumbotron-heading">
+            Searching for Web and Mobile developer??
+          </h2>
+          <p class="lead text-muted" style="font-weight: bold;">
+            I can develop beautiful websites and mobile apps
+          </p>
+          <i
+            class="fas fa-lg fa-arrow-circle-down lead"
+            style="color: black;"
+          ></i>
+          CheckOut
+          <p>
+            <button onclick="show('front')" class="btn btn-primary my-2">Searching for Front End</button>
+            <button onclick="show('app')" class="btn btn-primary my-2"
+              >Searching for App Developer</button>
+            
+            <button onclick="show('back')" class="btn btn-primary my-2">Searching for Back End</button>
+          </p>
+        </div>
+      </section>
+
+      <div id="projects">
+        <div class="row justify-content-center" style="
+        margin-top: 100px;"><h2>My Projects</h2></div>
+        <div class="row card-boxes">
+          <div class="col-md-4" id="flutter">
+          </div>
+          <div class="col-md-4" id="frontend">
+            
+          </div>
+          <div class="col-md-4" id="backend"></div>
+          
+
+        </div>
+      </div>
+
+
+      <div id="skills">
+
+        <div class="jumbotron text-dark text-center" style="background-color:white">
+          <h1 class="display-8">My Skills</h1>
+          <hr class="my-2">
+          
+
+        </div>
+
+        <section id="cd-timeline" class="cd-container">
+          <div class="cd-timeline-block">
+            <div class="cd-timeline-img cd-picture"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1280px-Node.js_logo.svg.png" alt="Nodejs"> </div>
+            <!-- cd-timeline-img -->
+            
+            <div class="cd-timeline-content">
+              <h2>NodeJs</h2>
+              <p> Node.js is an open-source, cross-platform, JavaScript runtime environment that executes JavaScript code outside a web browser. </p>
+              <span class="cd-date">Feb 21,2018</span>
+            <!-- cd-timeline-content --> 
+          </div>
+          <!-- cd-timeline-block -->
+          
+          <div class="cd-timeline-block">
+            <div class="cd-timeline-img cd-movie"> <img src="https://du0ulnyus7r80.cloudfront.net/wp-content/uploads/2020/02/spring-boot-logo-png-4-transparent.png" alt="Springboot"> </div>
+            <!-- cd-timeline-img -->
+            
+            <div class="cd-timeline-content">
+              <h2>Spring boot</h2>
+              <p> Spring Boot is an open source Java-based framework used to create a micro Service. It is developed by Pivotal Team and is used to build stand-alone and production ready spring applications.</p>
+            <span class="cd-date">Jan 18,2020</span> </div>
+            <!-- cd-timeline-content --> 
+          </div>
+          <!-- cd-timeline-block -->
+          
+          <div class="cd-timeline-block">
+            <div class="cd-timeline-img cd-picture"> <img src="https://www.pngfind.com/pngs/m/685-6854970_react-logo-png-png-download-logo-png-reactjs.png" alt="ReactJs"> </div>
+            <!-- cd-timeline-img -->
+            
+            <div class="cd-timeline-content">
+              <h2>React Js</h2>
+              <p> React is an open-source JavaScript library for building user interfaces or UI components. It is maintained by Facebook and a community of individual developers and companies. React can be used as a base in the development of single-page or mobile applications </p>
+            <span class="cd-date">Jan 24,2018</span> </div>
+            <!-- cd-timeline-content --> 
+          </div>
+          <!-- cd-timeline-block -->
+          
+          <div class="cd-timeline-block">
+            <div class="cd-timeline-img cd-location"> <img src="https://cdn.worldvectorlogo.com/logos/flutter-logo.svg" alt="Flutters"> </div>
+            <!-- cd-timeline-img -->
+            
+            <div class="cd-timeline-content">
+              <h2>Flutter</h2>
+              <p> Flutter is an open-source UI software development kit created by Google. It is used to develop applications for Android, iOS, Linux, Mac, Windows, Google Fuchsia and the web from a single codebase. The first version of Flutter was known as codename "Sky" and ran on the Android operating system</p>
+              <span class="cd-date">Feb 21,2020</span> </div>
+            <!-- cd-timeline-content --> 
+          </div>
+          <div class="cd-timeline-block">
+            <div class="cd-timeline-img cd-location"> <img src="https://banner2.cleanpng.com/20180426/wpw/kisspng-angularjs-javascript-directive-5ae17348350107.6691653815247245522171.jpg" alt="Flutters"> </div>
+            <!-- cd-timeline-img -->
+            
+            <div class="cd-timeline-content">
+              <h2>Angular</h2>
+              <p>
+                Angular is an open-source JavaScript library for building user interfaces or UI components. It is maintained by Google and a community of individual developers and companies. 
+              </p>
+              <span class="cd-date">Feb 21,2020</span> </div>
+            <!-- cd-timeline-content --> 
+          </div>
+          <div class="cd-timeline-block">
+            <div class="cd-timeline-img cd-location"> <img src="https://e7.pngegg.com/pngimages/595/79/png-clipart-dart-programming-language-flutter-object-oriented-programming-flutter-logo-class-fauna.png" alt="Flutters"> </div>
+            <!-- cd-timeline-img -->
+            
+            <div class="cd-timeline-content">
+              <h2>Dart</h2>
+              <p> Dart is programming language used in flutter developed by Google </p>
+              <span class="cd-date">Feb 21,2020</span> </div>
+            <!-- cd-timeline-content --> 
+          </div>
+          <div class="cd-timeline-block">
+            <div class="cd-timeline-img cd-location"> <img src="https://www.pngitem.com/pimgs/m/519-5191896_pofolio-website-html-css-javascript-logo-png-transparent.png" alt="Flutters"> </div>
+            <!-- cd-timeline-img -->
+            
+            <div class="cd-timeline-content">
+              <h2>HTML,CSS,PURE JS</h2>
+              <p>In order to build an interactive and funcionality based website HTML,CSS,and JS are the most.An overview:
+
+                HTML provides the basic structure of sites, which is enhanced and modified by other technologies like CSS and JavaScript.
+                CSS is used to control presentation, formatting, and layout.
+                JavaScript is used to control the behavior of different elements.</p>
+              <span class="cd-date">March 21,2016</span> </div>
+            <!-- cd-timeline-content --> 
+          </div>
+          <!-- cd-timeline-block -->
+          
+         
+          <!-- cd-timeline-block -->
+          
+        
+          <!-- cd-timeline-block --> 
+        </section>
+        Drop here!
+        
+
+
+      </div>
+
+
+      <!-- footer-->
+      <footer id="about" class="row footer-design">
+        <div class="col-md-12">
+
+          <center>
+            @Developed by BabaTechnoSoft <br>
+            <p>For more info: www.sundargautam.com.np</p></center>
+       
+            <div class="details">
+              <h5>My Details</h5>
+              <i class="fas fa-envelope-square"></i> Email:sundargautam6@gmail.com <br>
+              <i class="fas fa-address-card"></i>  Address: Damak-9,Jhapa <br>
+            </div>
+       
+          <div class="row">
+            <ul class="social">
+              <a
+                href="https://www.facebook.com/sundar.gautam.1848"
+                target="popup"
+                ><li><i class="fab fa-facebook-f"></i></li
+              ></a>
+              <a href="https://twitter.com/sojo_raja" target="popup"
+                ><li><i class="fab fa-twitter"></i></li
+              ></a>
+              <a href="https://www.instagram.com/sundargautam12" target="popup">
+                <li><i class="fab fa-instagram"></i></li
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/sundar-gautam-1339a8191/"
+                target="popup"
+              >
+                <li><i class="fab fa-linkedin-in"></i></li
+              ></a>
+            </ul>
+          </div>
+        </div>
+      </footer>
+
+      <!--footer ends here-->
+    </div>
+
+    <!-- till here-->
+    <script>
+      jQuery(document).ready(function($){
+      var $timeline_block = $('.cd-timeline-block');
+      
+      //hide timeline blocks which are outside the viewport
+      $timeline_block.each(function(){
+      if($(this).offset().top > $(window).scrollTop()+$(window).height()*0.75) {
+      $(this).find('.cd-timeline-img, .cd-timeline-content').addClass('is-hidden');
+      }
+      });
+      
+      //on scolling, show/animate timeline blocks when enter the viewport
+      $(window).on('scroll', function(){
+      $timeline_block.each(function(){
+      if( $(this).offset().top <= $(window).scrollTop()+$(window).height()*0.75 && $(this).find('.cd-timeline-img').hasClass('is-hidden') ) {
+      $(this).find('.cd-timeline-img, .cd-timeline-content').removeClass('is-hidden').addClass('bounce-in');
+      }
+      });
+      });
+      });
+      </script>
+
+
+    <script src="./index.js"></script>
+    <script src="./timeline.js"></script>
+
+  </body>
+</html>
